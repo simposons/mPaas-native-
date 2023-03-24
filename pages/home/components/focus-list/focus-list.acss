@@ -1,0 +1,34 @@
+.focus-list {}
+
+.focus-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  transition: 0.1s;
+}
+
+.focus-loading>view {
+  color: #969799;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.focus-empty .ant-empty-image>image {
+  width: calc(168rpx * 2);
+  height: calc(95rpx * 2);
+}
+
+.empty-text {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #999999;
+  line-height: 24rpx;
+}
+.empty-button{
+  margin-top: 30rpx;
+  border-radius: 30rpx;
+  color: #df3736;
+  box-shadow: inset 0 0 0 1px #df3736;
+}

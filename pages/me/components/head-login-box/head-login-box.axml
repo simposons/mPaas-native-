@@ -1,0 +1,61 @@
+<view class="head-login-box">
+  <view class="head-top-login-view">
+    <image class="head-login-box-img" onTap="gotoLogin" mode='aspectFit' src="/assets/image/me/empty.png" />
+    <view class="new-me-login-no" a:if="{{islogin == 2}}">
+      <view class="new-me-login-no-1">
+        <text>登录 / 注册</text>
+        <icon type="arr" />
+      </view>
+      <view class="new-me-login-no-2">
+        开启国新证券服务 享受更多智能体验
+      </view>
+    </view>
+    <view a:if="{{ islogin == 1 }}" class="new-me-login-yes">
+      <view class="new-me-login-yes-1">
+        测试A
+      </view>
+      <view class="new-me-login-yes-2">
+        <image class="new-me-login-yes-2-img" mode="scaleToFill" src="/assets/image/me/vipIcon.png" />
+        三星级客户
+      </view>
+    </view>
+  </view>
+  <view class="head-info-data-box">
+    <view class="head-info-data-count">
+      <view class="head-info-data-data">
+        <view class="head-info-data-num head-info-data-num-left">666666.66</view>
+        <view class="head-info-data-title head-info-data-title-left">总资产(元)</view>
+      </view>
+    </view>
+    <image class="head-info-loading-icon head-info-loading-icon-roll" mode="scaleToFill" src="/assets/image/me/refresh.png" />
+    <view class="head-info-data-userable">
+      <view class="head-info-data-data">
+        <view class="head-info-data-num head-info-data-num-right">666666.66</view>
+        <view class="head-info-data-title head-info-data-title-right">可用资金(元)</view>
+      </view>
+    </view>
+  </view>
+  <view class="head-login-box-bottom">
+    <view class="head-login-level-box">
+      <view class="head-login-level-content">
+        <view class="head-login-level-star-box">
+          <image class="head-login-level-star-img" mode="scaleToFill" src="/assets/image/me/fiveStar.png" />          
+          <view>尊享三星</view>
+        </view>
+        <view class="head-login-level-server" @click="toItemPage('grading')">
+          查看更多服务<am-icon type="RightOutline"></am-icon>
+        </view>
+      </view>
+    </view>
+    <view class="head-icon-box">
+      <view class="head-icon-content">
+        <view a:for="{{ shortcutData }}" class="head-icon-inner" a:for-item="it">
+          <image class="head-icon-img" mode="scaleToFill" src="{{it.imUrl}}" />
+          <view>
+            {{it.title}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

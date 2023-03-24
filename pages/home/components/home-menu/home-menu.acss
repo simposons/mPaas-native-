@@ -1,0 +1,32 @@
+.home-menu{
+  background-color: #ff4d4d;
+  height: 295rpx;
+}
+.home-swiper{
+  text-align: center;
+  height: 300rpx;
+  border-radius: 16rpx 16rpx 0 0;
+  background-color: #fff;
+}
+.flex-box{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15rpx 0 35rpx 0;
+}
+.flex-item {
+  width: 20%;
+  text-align: center;
+  margin: 10rpx 0 5rpx 0;
+}
+.item-image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.item-title{
+  font-size: 20rpx;
+  margin: 10rpx 0;
+  text-align: center;
+  color: #000;
+}

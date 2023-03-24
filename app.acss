@@ -1,0 +1,7 @@
+@import '/assets/css/animate.min.acss';
+/* 公共样式 */
+page {
+  background: #f7f7f7;
+  margin: 0px!important;
+  box-sizing: border-box;
+}

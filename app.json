@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/home/demo/demo",
+    "pages/webview/common-web-view/common-web-view",
+    "pages/me/index/index"
+  ],
+  "window": {
+    "defaultTitle": "首页",
+    "transparentTitle": "none",
+    "titleBarColor": "#fff",
+    "pullRefresh": false,
+    "showTitleLoading": "YES",
+    "allowsBounceVertical": "YES",
+    "titlePenetrate": "NO"
+  },
+  "useDynamicPlugins": false
+}

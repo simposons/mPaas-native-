@@ -1,0 +1,12 @@
+{
+  "defaultTitle": "demo",
+  "usingComponents": {
+    "demo":"/components/demo/demo",
+    "nav-bar":"/components/nav-bar/nav-bar",
+    "qiun-my-ucharts": "@qiun/my-ucharts"
+  },
+  "optionMenu": {
+    "icon": "https://img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png"
+  },
+  "titlePenetrate": "NO"
+}

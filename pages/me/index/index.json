@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "head-login-box": "/pages/me/components/head-login-box/head-login-box",
+    "me-content": "/pages/me/components/me-content/me-content"
+  },
+  "styleIsolation": "apply-shared",
+  "defaultTitle": "我的"
+}

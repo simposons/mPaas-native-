@@ -1,0 +1,19 @@
+<view class="focus-list">
+  <list>
+    <view class="focus-loading" hidden="{{ !loading }}">
+      <loading type="spin" color="#969799" />
+      <view>加载中...</view>
+    </view>
+    <empty class="focus-empty" a:if="{{ !loading&&items.length===0 }}" image="/assets/image/home/focusList/empty.png">
+      <view slot="extra">
+        <view a:if="{{mtoken}}" class="empty-text">暂无关注</view>
+        <view a:if="{{ !mtoken }}" class="empty-text">请登录后查看</view>
+        <button a:if="{{ !mtoken }}" class="empty-button" type="default" inline size="small" onTap="login">登录</button>
+      </view>
+    </empty>
+    <view a:else>
+      <list-item showviewider="{{false}}" a:for="{{ items }}" a:key="{{index}}">
+      </list-item>
+    </view>
+  </list>
+</view>

@@ -1,0 +1,40 @@
+page{
+  background-color: #fff;
+  /* margin: 0px; */
+}
+.home-line{
+  height: 10px;
+  background: #f1f1f2;
+  clear: both;
+}
+.tabs-active{
+  color: #f45a52!important;
+  font-weight: 600;
+  line-height: 20rpx;
+}
+.tabs-active::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 24rpx * 2);
+  height: 6rpx;
+  overflow: hidden;
+  font-size: 0;
+  border-radius: 50vh;
+  box-sizing: border-box;
+  background-color: #f45a52!important;
+}
+.tabs-bar{
+  height: 80rpx;
+  border: none;
+  margin-bottom: 20rpx;
+  position: sticky;
+  top: -2rpx;
+  z-index: 999;
+  font-weight: 600;
+}
+.home-swiper-content{
+  padding: 12px;
+  color: #999999;
+  background-color: #FFFFFF;
+}

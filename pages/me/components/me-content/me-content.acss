@@ -1,0 +1,25 @@
+.me-content-box {
+}
+.me-content-line {
+  height: 30rpx;
+}
+.me-content-top-line {
+  height: 40rpx;
+  background: #ffffff;
+}
+.me-content-box .ant-list-item-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32rpx;
+}
+
+.me-content-box .ant-list-item-content-main {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #333333;
+}
+.me-content-box .ant-list-item-extra {
+  font-size: 24rpx;
+  color: #999999;
+}

@@ -1,0 +1,10 @@
+<!-- 页面 -->
+<view class="home-banner">
+  <swiper indicator-dots="{{true}}" class="home-swiper" autoplay duration="1000" interval="5000" circular indicator-color="#ebedf0" indicator-active-color="#fff">
+    <block a:for="{{bannerList}}">
+      <swiper-item key="{{item.goto}}">
+        <image class="swiper-img"  mode="scaleToFill" src="{{item.src}}" onTap="toItemPage" data-id="{{item.goto}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

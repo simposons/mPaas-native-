@@ -1,0 +1,17 @@
+<!-- 页面 -->
+<view class="home-menu">
+  <swiper indicator-dots="{{true}}" class="home-swiper" indicator-color="#ebedf0" indicator-active-color="rgb(97, 100, 104)">
+    <block a:for="{{menuList}}">
+      <swiper-item key="{{index}}">
+        <view class="flex-box">
+          <block a:for="{{item}}">
+            <view class="flex-item" onTap="toItemPage" data-id="{{item.id}}">
+              <image class="item-image" mode="scaleToFill" src="{{item.imUrl}}" />
+              <view class="item-title">{{item.title}}</view>
+            </view>
+          </block>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

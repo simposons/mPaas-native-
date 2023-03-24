@@ -1,0 +1,24 @@
+<view>
+  <home-top onFunctionEvent="gotoFunctionEvent" />
+  <home-menu onFunctionEvent="gotoFunctionEvent" />
+  <home-banner onFunctionEvent="gotoFunctionEvent" />
+  <view class="home-line"></view>
+  <view class="home-line"></view>
+  <tabs items="{{items}}" current="{{current}}" onChange="onChange" class="home-tabs" tabActiveClassName="tabs-active" tabsBarClassName="tabs-bar">
+    <view slot="title" slot-scope="tab" data-index="{{tab.index}}" onTap="tabTap">
+      {{tab.value.title}}
+    </view>
+    <swiper current="{{current}}" autoplay="{{false}}" vertical="{{false}}" circular="{{false}}" onChange="onSwipeChange" swipe-ratio="0.3" touch-angle="10" adjust-height="current">
+      <swiper-item a:for="{{items}}" a:key="{{index}}" style="min-height:40vh!important">
+        <new-best-live a:if="{{ item.index===0 }}" />
+        <view a:elif="{{ item.index===1 }}">
+          <article-type/> 
+          <view style="width:100%;height:100vh;background:#ffeee6">占位</view>
+        </view>
+        <new-live-info a:elif="{{ item.index===2 }}" onItemTap="onBestLiveClick"/>
+        <focus-list a:elif="{{ item.index===3 }}" />
+        <hot-sale a:elif="{{ item.index===4 }}" />
+      </swiper-item>
+    </swiper>
+  </tabs>
+</view>

@@ -1,0 +1,13 @@
+<view class="article-type">
+  <list class="article-list">
+    <list-item showDivider a:for="{{ lanmuList }}" a:key="{{index}}" onTap="goToPage">
+      <view class="article-item">
+        <view class="item-title">
+          <view class="title-num">{{index+1}}</view>
+          <view class="title-info">{{item.title}}</view>
+        </view>
+        <view class="item-info">{{item.info}}</view>
+      </view>
+    </list-item>
+  </list>
+</view>

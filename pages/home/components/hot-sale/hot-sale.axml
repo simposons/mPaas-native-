@@ -1,0 +1,45 @@
+<import-sjs from="./hot-sale.sjs" name="{perBuyLimit,shouyilv}" />
+<view class="home-hot-sale">
+  <list>
+    <view class="sale-loading" hidden="{{ !loading }}">
+      <loading type="spin" color="#969799" />
+      <view>加载中...</view>
+    </view>
+    <empty class="sale-empty" a:if="{{ !loading&&hotSaleDataObjectArr.length===0 }}" image="/assets/image/zanwushuju.png">
+      <view slot="extra">
+        
+        <button type="default" inline danger size="small" loading onTap="handleTap">点击刷新</button>
+      </view>
+    </empty>
+    <view a:else>
+      <list-item showDivider="{{false}}" a:for="{{ hotSaleDataObjectArr }}" a:key="{{index}}">
+        <view class="sale-item" onTap="itemTap" data-item="{{item}}">
+          <view class="item-name">{{item.product_name}}</view>
+          <view class="item-info">
+            <view class="info-logo">
+              <view class="info-image">
+                <image mode="scaleToFill" src="/assets/image/home/hotsale.png" />
+              </view>
+              <view class="info-level">{{item.risk_level}}</view>
+            </view>
+            <view class="info-limit">
+              <view>{{perBuyLimit(item.per_buy_limit)}}</view>
+              <view>|</view>
+              <view hidden="{{!item.current_price}}">{{item.current_price}}</view>
+              <view hidden="{{!item.product_feature}}">{{item.product_feature}}</view>
+            </view>
+          </view>
+          <view class="item-lab">
+            {{ shouyilv(item.shouyilv) }}
+          </view>
+          <view class="item-text">
+            {{ item.text }}
+          </view>
+          <view class="item-button">
+            <button onTap="toFundPage" data-item={{item}}>立即购买</button>
+          </view>
+        </view>
+      </list-item>
+    </view>
+  </list>
+</view>

@@ -1,0 +1,4 @@
+<view>
+  <head-login-box></head-login-box>
+  <me-content></me-content>
+</view>

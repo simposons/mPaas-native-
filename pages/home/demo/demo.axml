@@ -1,0 +1,49 @@
+<!-- <page-meta
+  background-text-style="{{bgTextStyle}}"
+  background-color="{{bgColor}}"
+  background-color-top="{{bgColorTop}}"
+  background-color-bottom="{{bgColorBottom}}"
+  scroll-top="{{scrollTop}}"
+  page-style="color: green"
+  root-font-size="64px"
+  onScroll="handleScroll"
+> 
+</page-meta>-->
+<import-sjs from="/utils/index.sjs" name="{toFixed}" />
+<view>
+  <nav-bar onLeftTap="leftTap"></nav-bar>
+  <view class="tilte">animate.css 测试</view>
+  <view class="animate__animated animate__bounceIn" style="width:50vw;height:50vw;background:greenyellow"></view>
+  <view class="tilte">setData 示例</view>
+  <view>{{num}}</view>
+  <button size="mini" type="primary" onTap="numChange">增加</button>
+  <view class="tilte">自定义组件示例</view>
+  <demo></demo>
+  <!-- <view  class="tilte">mini-ali-ui 组件示例</view>
+  <list>
+    <picker-item data-field="pickerData" placeholder="请选择" value="{{picker}}" onPickerTap="onPickerTap">
+      测试
+    </picker-item>
+  </list> -->
+  <view class="tilte">接口测试</view>
+  <button size="mini" type="primary" onTap="ajaxTest">调用</button>
+  <view class="tilte">sjs文件引入测试</view>
+  <view>{{toFixed(3.1415926)}}</view>
+  <view>{{num.toFixed(2)}}</view>
+  <view>{{num.toFixed(2)}}</view>
+  <view>{{JSON.stringfy({a:1})}}</view>
+  <view  class="tilte">ucharts使用示例</view>
+  <qiun-my-ucharts type="column" opts="{{opts}}" chartData="{{chartData}}" />
+  <view  class="tilte">web-view跳转测试</view>
+  <button size="mini" type="primary" onTap="goWebView">跳转</button>
+  <view  class="tilte">引入服务器图片</view>
+  <image mode="scaleToFill" style="width:30rpx;height:30rpx;margin:30rpx" src="{{url}}" />
+  <view  class="tilte">open-type分享</view>
+  <button size="mini" type="primary" open-type="share">推荐</button>
+  <view  class="tilte">spliceData测试</view>
+  <button size="mini" type="primary" onTap="spliceDataTest">测试</button>
+  <view class="title">摇一摇测试</view>
+  <button size="mini" type="primary" onTap="watchShake">绑定摇一摇，点击 Shake 按钮看效果</button>
+  <view class="title">跳转错误页面测试</view>
+  <navigator url="/pages/home/demo/demo">跳转</navigator>
+</view>

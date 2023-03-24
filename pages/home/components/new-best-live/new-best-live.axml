@@ -1,0 +1,41 @@
+<view class="new-best-live">
+  <list>
+    <view class="live-loading" hidden="{{ !loading }}">
+      <loading type="spin" color="#969799" />
+      <view>加载中...</view>
+    </view>
+    <empty a:if="{{ !loading&&items.length===0 }}" title="这里什么也没有" message="看看其它吧" />
+    <view a:else>
+      <list-item showDivider="{{false}}" a:for="{{ items }}" a:key="{{index}}">
+        <view class="live-item" onTap="itemTap" data-item="{{item}}">
+          <!-- 照片 -->
+          <view class="live-item-img">
+          <image mode="scaleToFill" src="{{item.TGTX}}" />
+          </view>
+          <view class="live-item-right">
+            <!-- 右边第一行  姓名 编号-->
+            <view class="live-item-title">
+              <view class="live-item-name">{{item.TGMC}}</view>
+              <view class="live-item-code">
+                <view class="code-title">执业编号</view>
+                <view class="code-info">{{item.ZSBH}}</view>
+              </view>
+            </view>
+            <!-- 右边第二行 称号-->
+            <view class="live-item-tag">
+              <view class="tag-content" a:for="{{ item.TGBQ&&item.TGBQ.split('|') }}" a:key="{{index}}">
+                {{item}}
+              </view>
+            </view>
+            <!-- 右边第三行 标题 -->
+            <view class="live-item-subtitle">{{item.FQZB}}</view>
+            <!-- 右边第四行 简介 -->
+            <view class="live-item-detail">{{item.ZBNR}}</view>
+            <!-- 右边第五号 点赞 观看 -->
+            <view class="live-item-num">{{ item.DZRS + '点赞 | ' + item.CYRS + '观看' }}</view>
+          </view>
+        </view>
+      </list-item>
+    </view>
+  </list>
+</view>

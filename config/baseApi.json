@@ -1,0 +1,18 @@
+{
+  "main_url": {
+    "sit": "https://hrqywxcs.hrsec.com.cn/biscreen",
+    "prod": "https://wxxd.hrsec.com.cn:6688/biscreen"
+  },
+  "livesUrl": {
+    "sit": "https://dzh.hrsec.com.cn:8443/tgh5/api/common/getHotLives?",
+    "prod": "https://wxact.hrsec.com.cn:7443/tgh5/api/common/getHotLives?"
+  },
+  "xgbBaseUrl": {
+    "sit": "https://hrtest.hrsec.com.cn:14982",
+    "prod": "https://yzhzx2.hrsec.com.cn:6688"
+  },
+  "hrmall": {
+    "sit": "https://hrtest.hrsec.com.cn:14982/mall",
+    "prod": "https://yzhzx2.hrsec.com.cn:6688/mall"
+  }
+}

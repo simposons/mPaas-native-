@@ -1,0 +1,17 @@
+{
+  "defaultTitle": "首页",
+  "pullRefresh": true,
+  "backgroundColor": "#ffffff",
+  "styleIsolation": "shared",
+  "usingComponents": {
+    "tabs": "antd-mini/es/Tabs/index",
+    "home-top":"/pages/home/components/home-top/home-top",
+    "home-menu":"/pages/home/components/home-menu/home-menu",
+    "home-banner":"/pages/home/components/home-banner/home-banner",
+    "new-best-live":"/pages/home/components/new-best-live/new-best-live",
+    "new-live-info":"/pages/home/components/new-live-info/new-live-info",
+    "hot-sale":"/pages/home/components/hot-sale/hot-sale",
+    "focus-list":"/pages/home/components/focus-list/focus-list",
+    "article-type":"/pages/home/components/article-type/article-type"
+  }
+}

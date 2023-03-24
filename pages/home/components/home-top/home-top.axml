@@ -1,0 +1,19 @@
+<!--
+  template
+imUrl: string
+title: string
+-->
+<template name="menuItem">
+  <view class="item" onTap="toItemPage" data-id="{{id}}">
+    <image class="item-image" mode="scaleToFill" src="{{imUrl}}" />
+    <view class="item-title">{{title}}</view>
+  </view>
+</template>
+<!-- 页面 -->
+<view class="home-top">
+  <view class="container-item">
+    <block a:for="{{ menuList }}"> 
+      <template key="{{item.id}}" is="menuItem" data="{{ ...item }}"/>
+    </block>
+  </view>
+</view>

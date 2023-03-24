@@ -1,0 +1,18 @@
+.home-banner{
+  padding: 0 12px;
+  padding-top: 1px;
+  padding-bottom: 8px;
+  background: white;
+  height: 156rpx;
+  margin: 15rpx 0;
+}
+.home-swiper{
+  border-radius: 7px;
+  padding:0;
+  overflow: hidden;
+  height: 156rpx;
+}
+.swiper-img{
+  width: 100%;
+  height: 156rpx;
+}

@@ -1,0 +1,138 @@
+.new-best-live {}
+
+.live-loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  transition: 0.1s;
+}
+.live-loading>view{
+  color: #969799;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.live-item {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  box-shadow: 0px 5px 5px #e5e5e5;
+  border-radius: 16rpx;
+}
+
+.live-item-img {
+  height: 270rpx;
+  width: 240rpx;
+  padding: 0 0 40rpx 0;
+}
+
+.live-item-img>image {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+
+.live-item-img>image::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  box-shadow: inset 0px -15px 8px 0px white;
+}
+
+.live-item-right {
+  width: calc(100% - 240rpx);
+  padding-top: 20rpx;
+}
+
+.live-item-title {
+  display: flex;
+  align-items: center;
+}
+
+.live-item-name {
+  font-size: 40rpx;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.live-item-code {
+  display: flex;
+  align-items: center;
+  border: 2rpx solid #e7b67c;
+  border-radius: 6rpx;
+  font-size: 22rpx;
+  margin-left: 14rpx;
+  height: 36rpx;
+  /* overflow: hidden; */
+  width: 300rpx;
+}
+
+.code-title {
+  background: #e7b67c;
+  width: 112rpx;
+  padding: 2rpx 10rpx;
+  color: #ffffff;
+  margin-right: 6rpx;
+  text-align: center;
+}
+
+.code-info {
+  color: #e7b67c;
+}
+
+.live-item-tag {
+  display: flex;
+  align-items: center;
+  padding-top: 15rpx;
+  margin-left: 2rpx;
+}
+
+.tag-content {
+  flex-wrap: wrap;
+  border: 2rpx solid #e7b67c;
+  border-radius: 4rpx;
+  font-size: 20rpx;
+  padding: 0 10rpx;
+  line-height: normal;
+  margin-right: 10rpx;
+  color: #e7b67c;
+}
+
+.live-item-subtitle {
+  padding-top: 20rpx;
+  color: #333333;
+  font-size: 32rpx;
+  text-align: left;
+  height: 42rpx;
+  line-height: 32rpx;
+  margin-right: 15rpx;
+  word-break: break-all;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+}
+
+.live-item-detail {
+  color: #999999;
+  font-size: 13px;
+  line-height: 18px;
+  height: 36px;
+  margin-right: 15rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.live-item-num{
+  padding: 20rpx 20rpx 20rpx 0;
+  text-align: right;
+  font-size: 20rpx;
+  color: #999999;
+}

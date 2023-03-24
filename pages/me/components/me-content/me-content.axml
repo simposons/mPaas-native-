@@ -1,0 +1,14 @@
+<view class="me-content-box">
+  <view class="me-content-top-line">
+    
+  </view>
+  <an-list>
+    <list-item a:for="{{ businessList }}" image="{{item.imUrl}}" extra="{{item.des}}" arrow="right">{{item.title}}</list-item>
+  </an-list>
+  <view class="me-content-line">
+    
+  </view>
+  <an-list>
+    <list-item a:for="{{ shortcutData }}" image="{{item.imUrl}}" extra="{{item.des}}" arrow="right">{{item.title}}</list-item>
+  </an-list>
+</view>

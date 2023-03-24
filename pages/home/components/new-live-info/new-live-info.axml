@@ -1,0 +1,25 @@
+<view class="home-live-info">
+  <list>
+    <view class="info-loading" hidden="{{ !loading }}">
+      <loading type="spin" color="#969799" />
+      <view>加载中...</view>
+    </view>
+    <empty a:if="{{ !loading&&items.length===0 }}" title="这里什么也没有" message="看看其它吧" />
+    <view a:else>
+      <list-item showDivider="{{false}}" a:for="{{ items }}" a:key="{{index}}">
+        <view class="info-item" onTap="itemTap" data-item="{{item}}">
+          <view class="info-item-content">
+            <view class="item-content-title">{{item.title}}</view>
+            <view class="item-content-bottom">
+              <view>选股宝</view>
+              <view>{{item.msg_created_at.split('.')[0]}}</view>
+            </view>
+          </view>
+          <view class="info-item-image">
+            <image mode="scaleToFill" src="{{'/assets/image/home/liveInfo/' + ((index % 30) + 1) + '.png'}}" />
+          </view>
+        </view>
+      </list-item>
+    </view>
+  </list>
+</view>

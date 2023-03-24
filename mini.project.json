@@ -1,0 +1,19 @@
+{
+  "component2": true,
+  "axmlStrictCheck": true,
+  "enableAppxNg": true,
+  "enableHMR": false,
+  "enableNodeModuleBabelTransform": true,
+  "compileOptions": {
+    "less": {
+      "modifyVars": {
+        "theme": "dark",
+        "rpx": "0.5px"
+      }
+    },
+    "exclude": [
+      "src/**",
+      "node_modules/**"
+    ]
+  }
+}

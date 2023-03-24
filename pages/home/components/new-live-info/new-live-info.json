@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "styleIsolation": "apply-shared",
+  "usingComponents": {
+    "list": "antd-mini/es/List/index",
+    "list-item": "antd-mini/es/List/ListItem/index",
+    "empty": "antd-mini/es/Empty/index",
+    "loading": "antd-mini/es/Loading/index"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "yzh-home",
+  "version": "1.0.0",
+  "description": "一账户首页",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js,.axml components pages"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antd-mini": "^1.1.2",
+    "herculex": "^0.2.16-alpha.3"
+  },
+  "devDependencies": {
+    "@qiun/my-ucharts": "^2.5.0-20230101",
+    "dayjs": "^1.11.7",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
